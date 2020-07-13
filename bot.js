@@ -137,7 +137,7 @@ client.login(ayarlar.token);
 //----------------------------------GEÇİCİ KANAL----------------------------// 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
     // todo create channel
-    if (newMember.voiceChannel != null && newMember.voiceChannel.name.startsWith('➕│2 Kişilik Oda')) {
+    if (newMember.voiceChannel != null && newMember.voiceChannel.name.startsWith('➕・2 Kişilik Oda')) {
         newMember.guild.createChannel(`║👤 ${newMember.displayName}`, {
             type: 'voice',
             parent: newMember.voiceChannel.parent
@@ -165,7 +165,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
 //----------------------------------GEÇİCİ KANAL----------------------------// 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
     // todo create channel
-    if (newMember.voiceChannel != null && newMember.voiceChannel.name.startsWith('➕│3 Kişilik Oda')) {
+    if (newMember.voiceChannel != null && newMember.voiceChannel.name.startsWith('➕・3 Kişilik Oda')) {
         newMember.guild.createChannel(`║👤 ${newMember.displayName}`, {
             type: 'voice',
             parent: newMember.voiceChannel.parent
@@ -221,7 +221,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
 //----------------------------------GEÇİCİ KANAL----------------------------// 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
     // todo create channel
-    if (newMember.voiceChannel != null && newMember.voiceChannel.name.startsWith('➕│5 Kişilik Oda')) {
+    if (newMember.voiceChannel != null && newMember.voiceChannel.name.startsWith('➕・5 Kişilik Oda')) {
         newMember.guild.createChannel(`║👤 ${newMember.displayName}`, {
             type: 'voice',
             parent: newMember.voiceChannel.parent
@@ -269,7 +269,7 @@ message.guild.createChannel('【🔐】2 Kişilik Odalar【🔐】', 'category',
   id: message.guild.id,
 }]);
 
-message.guild.createChannel(`➕│2 Kişilik Oda`, 'voice')
+message.guild.createChannel(`➕・2 Kişilik Oda`, 'voice')
 .then(channel =>
       channel.setParent(message.guild.channels.find(channel => channel.name === "【🔐】2 Kişilik Odalar【🔐】")))
 
@@ -277,7 +277,7 @@ message.guild.createChannel('【🔐】3 Kişilik Odalar【🔐】', 'category',
   id: message.guild.id,
 }]);
 
-message.guild.createChannel(`➕│3 Kişilik Oda`, 'voice')
+message.guild.createChannel(`➕・3 Kişilik Oda`, 'voice')
 .then(channel =>
       channel.setParent(message.guild.channels.find(channel => channel.name === "【🔐】3 Kişilik Odalar【🔐】")))
 
@@ -285,14 +285,14 @@ message.guild.createChannel('【🔐】4 Kişilik Odalar【🔐】', 'category',
   id: message.guild.id,
 }]);
 
-message.guild.createChannel(`➕│4 Kişilik Oda`, 'voice')
+message.guild.createChannel(`➕・4 Kişilik Oda`, 'voice')
 .then(channel =>
       channel.setParent(message.guild.channels.find(channel => channel.name === "【🔐】4 Kişilik Odalar【🔐】")))
 
 message.guild.createChannel('【🔐】5 Kişilik Odalar【🔐】', 'category', [{
   id: message.guild.id,
 }]);
-message.guild.createChannel(`➕│5 Kişilik Oda`, 'voice')
+message.guild.createChannel(`➕・5 Kişilik Oda`, 'voice')
 .then(channel =>
       channel.setParent(message.guild.channels.find(channel => channel.name === "【🔐】5 Kişilik Odalar【🔐】")))
 
