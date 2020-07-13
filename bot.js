@@ -193,7 +193,7 @@ client.on('voiceStateUpdate', (oldMember, newMember) => {
 //----------------------------------GEÇİCİ KANAL----------------------------// 
 client.on('voiceStateUpdate', (oldMember, newMember) => {
     // todo create channel
-    if (newMember.voiceChannel != null && newMember.voiceChannel.name.startsWith('➕│4 Kişilik Oda')) {
+    if (newMember.voiceChannel != null && newMember.voiceChannel.name.startsWith('➕・4 Kişilik Oda')) {
         newMember.guild.createChannel(`║👤 ${newMember.displayName}`, {
             type: 'voice',
             parent: newMember.voiceChannel.parent
